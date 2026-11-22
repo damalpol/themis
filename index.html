@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Themis Legal — Asistente Jurídico Virtual</title>
 <meta name="description" content="Asistente jurídico virtual especializado en procedimiento argentino. Tu asistente que transforma un expediente en un informe técnico de estado procesal, auditado y trazable." />
+<script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>  
 <style>
 :root{
   --navy:#14233f;
@@ -477,7 +478,16 @@ function toggleMenu(){
   nav.classList.toggle("open", menuOpen);
 }
 function openApp(){
-  alert("La fase de demo ha concluido\nGracias por su interes.");
+ // alert("La fase de demo ha concluido\nGracias por su interes.");
+  alertbox.render({
+  alertIcon: 'question',
+  title: 'Demo',
+  message: 'La fase de demo ha concluido\nGracias por su interes.',
+  btnTitle: 'Ok',
+  themeColor: '#000000',
+  btnColor: '#7CFC00',
+  border: true
+  });
  // window.open("https://mistakes-starring-aka-decorating.trycloudflare.com/","_blank","noopener");
 }
 function openCheckout(){
